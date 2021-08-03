@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     PiCade
+author:         Chase
+license:        creative commons CC-BY-NC-SA
+-->
+<theme>
+   <formatVersion>4</formatVersion>
+
+   <view name="system,basic,detailed,video">
+      <helpsystem name="help">
+         <pos>1 1</pos>
+      </helpsystem>
+      <image name="logo">
+         <path>./_inc/logos/${system.theme}.svg</path>
+      </image>
+      <text name="logoText">
+            <fontPath>./_inc/fonts/arcade-classic.ttf</fontPath>
+            <color>FFB000</color>
+            <forceUppercase>true</forceUppercase>
+      </text> 
+      <image name="background" extra="false">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/background.png</path>
+         <tile>false</tile>
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <origin>0.5 0</origin>
+         <maxSize>0.1953125 0.078125</maxSize>
+         <pos>0.5 0.078125</pos>
+      </image>
+      <text name="logoText">
+         <pos>0.02 0.02</pos>
+         <fontSize>0.075</fontSize>
+      </text>
+      <image name="border" extra="false">
+         <origin>0.5 0</origin>
+         <path>./_inc/images/border.png</path>
+         <size>0.29296875 0.005208333333333</size>
+         <pos>0.5 0.1953125</pos>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.05 0.240885416666667</pos>
+         <size>0.825 0.7</size>
+         <selectorColor>000000</selectorColor>
+         <selectedColor>FFFFFF</selectedColor>
+         <selectorHeight>0</selectorHeight>
+         <primaryColor>33FF00</primaryColor>
+         <secondaryColor>33FF00</secondaryColor>
+         <fontPath>./_inc/fonts/arcade-classic.ttf</fontPath>
+         <forceUppercase>0</forceUppercase>
+         <fontSize>0.05</fontSize>
+         <alignment>left</alignment>
+	 <lineSpacing>1.5</lineSpacing>
+         <zIndex>200</zIndex>
+      </textlist>
+   </view>
+
+   <view name="video">
+     <video name="md_video">
+       <pos>0 0</pos>
+       <size>0 2.25</size>
+       <zIndex>1</zIndex>
+       <default>./_inc/video/grid.mp4</default>
+     </video>
+     <rating name="md_rating">
+       <visible>0</visible> 
+     </rating>
+     <image name="md_marquee"> 
+       <visible>0</visible> 
+     </image>
+  </view>
+</theme>
